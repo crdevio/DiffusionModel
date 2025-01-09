@@ -1,1 +1,4 @@
-\beamer@sectionintoc {1}{Denoising Diffusion Probabilistic Models}{2}{0}{1}
+\beamer@sectionintoc {1}{First generation: Denoising Diffusion Probabilistic Models}{2}{0}{1}
+\beamer@sectionintoc {2}{Second generation}{27}{0}{2}
+\beamer@sectionintoc {3}{Classifier Guidance}{44}{0}{3}
+\beamer@sectionintoc {4}{State-of-the-art: Video generator}{59}{0}{4}
