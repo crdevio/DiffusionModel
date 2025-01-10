@@ -174,8 +174,32 @@ They've found that \alert{fixing $\Sigma_\theta$} to a constant gives the same r
 \end{frame}
 
 
-\begin{frame}{Our results}
-    TODO.
+\begin{frame}{Our results - Gaussian}
+    We have started with \alert{Gaussian generation}\only<1>{:
+    \begin{figure}
+        \centering
+        \includegraphics[width= 0.8\textwidth]{imgs/ho_implementation_init.png}
+    \end{figure}
+    }\only<2>{ and got satisfying results:
+    \begin{figure}
+        \centering
+        \includegraphics[width= \textwidth]{imgs/ho_gaussian_res.png}
+    \end{figure}
+    }
+\end{frame}
+
+\begin{frame}{Our results - Spirale}
+    Then we moved to a more complicated dataset, \alert{Spirale generation}\only<1>{:
+    \begin{figure}
+        \centering
+        \includegraphics[width= 0.8\textwidth]{imgs/spirale_dataset.png}
+    \end{figure}}\only<2>{ and also got satisfying results:
+    \begin{figure}
+        \centering
+        \includegraphics[width= \textwidth]{imgs/res_spirale.png}
+    \end{figure}
+    }
+    
 \end{frame}
 
 \section{Second generation}
@@ -200,9 +224,9 @@ They've found that \alert{fixing $\Sigma_\theta$} to a constant gives the same r
     \only<1-4>{
 Ho et al. fixed $\Sigma_\theta(x_t,t) = \sigma_t^2 I$ with: 
 \begin{itemize}
-    \item $\sigma^2 = \beta_t $ optimal if $x_0 \sim \mathcal{N}(0,I)$,
+    \item $\sigma_t^2 = \beta_t $ optimal if $x_0 \sim \mathcal{N}(0,I)$,
     \uncover<2->{
-        \item $\sigma^2 = \bar{\beta_t} $ optimal if $x_0$ is a point.
+        \item $\sigma_t^2 = \bar{\beta_t} $ optimal if $x_0$ is a point.
     }
 \end{itemize}
     }
@@ -313,6 +337,55 @@ Hence, they \alert{interpolate between the two extreme values}, and let the \ale
 
 \end{frame}
 
-\section{State-of-the-art: Video generator}
+\section{GLIDE: draw what you prompt}
 
+\begin{frame}{Classifier-Free Guidance}
+Previous guidance \alert{need a trained classifier}. They define:
+\begin{itemize}
+    \item{An \alert{unconditional} DDPM, that predicts $p_\theta (z)$.}
+    \item{A \alert{conditional} DPPM, that predicts $p_\theta(z \mid c)$.}
+\end{itemize}
+\only<2>{
+    Rather than using $p_\phi$, they train both models simultanously and \alert{use the gradient of $p_\theta (z \mid c)$ to estimate $\nabla \log p(z \mid c)$}.
+}
+\end{frame}
+
+\begin{frame}{CLIP}
+    \only<-2>{To force a \alert{label $c$}, we train a model that estimates the probability for \alert{$x$ to be of class $c$, and uses its gradient}.}
+
+    \only<2->{To force a \alert{sentence $c$}, we train a model that estimates the distance between \alert{$x$ and the sentence $c$, and uses its gradient}.}
+
+    \only<3->{
+        \begin{figure}
+            \centering
+                \includegraphics[width=0.8\textwidth]{imgs/clip.png}
+                \caption{How to compare an image and a text}
+        \end{figure}
+    }
+\end{frame}
+
+\begin{frame}{Results (OpenAI GLIDE)}
+    \begin{figure}
+        \centering
+            \includegraphics[width=0.8\textwidth]{imgs/glide_result.png}
+    \end{figure}
+\end{frame}
+
+
+\section{State-of-the-art brief review}
+
+\begin{frame}{ControlNet}
+    \only<1-2>{
+GLIDE \alert{accepts} one more input than text: \alert{a mask for inpainting}.
+
+\only<2->{ControlNet generalises it by \alert{adding more optional inputs} (e.g. Cany edges representation / Human Pose / Sketch).}
+    }
+
+\only<3>{
+    \begin{figure}
+        \centering
+            \includegraphics[width=0.6\textwidth]{imgs/controlnet-example.png}
+    \end{figure}
+}
+\end{frame}
 \end{document}
