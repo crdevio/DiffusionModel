@@ -1,5 +1,6 @@
 \documentclass{beamer}
 \usetheme{metropolis}
+\usepackage{subcaption}
 
 % Configuration des couleurs modernes
 \definecolor{myblue}{RGB}{173, 216, 230} % Bleu pastel
@@ -52,7 +53,7 @@
 
 \maketitle
 
-\section{Denoising Diffusion Probabilistic Models}
+\section{First generation: Denoising Diffusion Probabilistic Models}
 
 \begin{frame}{General Idea}
     \only<1>{Consider the set of \alert{hand-written digits $D$}. Can you give a probability distribution $q$ such that \alert{$x \sim q(x)$ ?}
@@ -163,7 +164,7 @@ They've found that \alert{fixing $\Sigma_\theta$} to a constant gives the same r
     p_\theta (x_{t-1} \mid x_t) := \mathcal{N}(x_{t-1} ; \mu_\theta(x_t,t), \sigma_t I)
 \end{align*}
 \only<2->{
-    The probability for our model to generate $x_0$ is $p_\theta (x_0) := \int p_\theta(x_{0:T}) dx_{1:T}$. \only<3->{Using negative log likelihood and computatios, we want to minimize:
+    The probability for our model to generate $x_0$ is $p_\theta (x_0) := \int p_\theta(x_{0:T}) dx_{1:T}$. \only<3->{Using negative log likelihood, approximations and computations, we want to minimize:
     \begin{align*}
     E_q \left[\frac{1}{2 \sigma_t^2} \|\tilde{\mu}_t(x_t,x_0) - \mu_\theta(x_t,t)\|^2\right]
     \end{align*} where $\tilde{\mu}$ is the optimal mean \alert{that depends on $x_0$ \only<3>{which we don't know}}. \only<4>{Using $x_t(x_0,\epsilon) = \sqrt{\bar{\alpha_t}} x_0 + \sqrt{1 - \bar{\alpha_t}} \epsilon$ we \alert{have a loss we can train on}.}
@@ -171,5 +172,147 @@ They've found that \alert{fixing $\Sigma_\theta$} to a constant gives the same r
 }
     
 \end{frame}
+
+
+\begin{frame}{Our results}
+    TODO.
+\end{frame}
+
+\section{Second generation}
+
+\begin{frame}{OpenAI's incrementation}
+    \begin{figure}
+        \centering
+        \includegraphics[width= \textwidth]{imgs/paper_gen2.png}
+    \end{figure}
+
+\uncover<2->{Recall that:
+\begin{itemize}
+    \item \uncover<2->{$\Sigma_\theta$ was \alert{set to a constant},}
+    \item \uncover<3->{The training loss was a \alert{simplified} version of reality.}
+\end{itemize}
+
+\uncover<4>{This paper \alert{tackle these problems}.}
+}
+\end{frame}
+
+\begin{frame}{How to modelize $\Sigma_\theta$}
+    \only<1-4>{
+Ho et al. fixed $\Sigma_\theta(x_t,t) = \sigma_t^2 I$ with: 
+\begin{itemize}
+    \item $\sigma^2 = \beta_t $ optimal if $x_0 \sim \mathcal{N}(0,I)$,
+    \uncover<2->{
+        \item $\sigma^2 = \bar{\beta_t} $ optimal if $x_0$ is a point.
+    }
+\end{itemize}
+    }
+\uncover<3->{
+    
+Hence for each $t$, we know that \alert{$\Sigma^* (x_,t)$ is between $\beta_t$ and $\bar{\beta_t}$}.}
+\uncover<4->{
+    
+Ho et al. have found that the impact is negligeable\only<4-5>{...}\only<6->{. But it depends of \alert{other hyperparameters}.}
+\only<5>{
+    \begin{figure}
+        \centering
+        \includegraphics[width= 0.8\textwidth]{imgs/ratio_tilde_et_normal.png}
+    \end{figure}
+}
+\only<6>{
+    
+Hence, they \alert{interpolate between the two extreme values}, and let the \alert{model learn $v(t)$}:
+\begin{align*}
+    \Sigma_\theta(x_t,t) := \exp(v_\theta (t) \log(\beta_t) + (1 - v_\theta (t)) \log(\bar{\beta}_t))
+\end{align*}
+}
+}
+
+\end{frame}
+
+\begin{frame}{Changing the Loss}
+    In the paper of Ho, they use the loss $L_{simple}$, a simplified version of $L_{LVB}$, that only affects $\mu_\theta$.
+    
+    \uncover<2->{Optimizing $L_{simple}$ \alert{performs well for FID}, but \alert{poorly} for log-likelihood metric.}
+    \uncover<3->{
+        
+    $L_{LVB}$ affects $\Sigma_\theta$ but \alert{increasing log-likelihood score can increase FID}, hence we \alert{need a trade-of}.}
+
+    \uncover<4->{
+        They train on 
+        \begin{align*}
+            L = L_{simple} + \lambda L_{LVB}
+        \end{align*}
+    }
+
+    \uncover<5>{This loss is prone to \alert{gradient exploding} and we need \alert{importance sampling} to implement it.}
+\end{frame}
+
+\begin{frame}{Our results}
+    TODO
+\end{frame}
+
+\section{Classifier Guidance}
+
+\begin{frame}{Importance of labels}
+    Let's get back to hand-written digits generation:
+    \only<-2>{
+    \begin{figure}
+        \centering
+            \includegraphics[width=0.4\textwidth]{imgs/mnist_sample_digits.png}
+            \caption{Source: ludwig.ai}
+    \end{figure}
+    }
+    \only<2>{A DDPM can \alert{generate new images that look like digits}, but the \alert{model can't distinguish a mix of two digits and a real digit}.}
+    \only<3->{
+
+        If we have a \alert{classifer} that gives $p_\phi (y \mid x_t)$, we can \alert{sample using} \begin{align*}
+            p_{\theta,\phi}(x_t \mid x_{t+1},y) = Z p_\theta(x_t \mid x_{t+1}) p_\phi(y \mid x_t)
+        \end{align*} This way if we set $y=3$, we can \alert{trick our model to generate somthing that looks like a 3}.
+    }
+
+\end{frame}
+
+\begin{frame}{Langevin Dynamics}
+    Given $x_0 \sim \pi(x)$ an unknown distribution, if we iterate through $x_{i+1} \leftarrow x_i + \epsilon \nabla_x \log p(x) + \sqrt{2 \epsilon} z_i$ with $\epsilon \rightarrow 0$ and $z_i \sim \mathcal{N}(0,I)$, we can sample from $p(x)$.
+
+    \only<2-5>{
+    \begin{figure}[ht]
+        \centering
+        \only<2>{\includegraphics[width=0.5\textwidth]{imgs/langevin0.png}}
+        \only<3>{\includegraphics[width=0.5\textwidth]{imgs/langevin1.png}}
+        \only<4>{\includegraphics[width=0.5\textwidth]{imgs/langevin3.png}}
+        \only<5>{\includegraphics[width=0.5\textwidth]{imgs/langevin4.png}}
+        \caption{Visualizations from Yang Song's work.}
+        \label{fig:yang_song}
+    \end{figure}  
+    }  
+
+    \only<6->{So we \alert{need to know $\nabla_x \log p(x)$}, but don't need to know $p(x)$.}
+
+    \only<7->{From the classifier $p_\phi$, one \alert{can get an approximation of $\nabla_x \log p(x)$}.}
+    
+\end{frame}
+
+\begin{frame}{Low vs High temperature}
+    \begin{figure}
+        \centering
+            \includegraphics[width=\textwidth]{imgs/guided_effect.png}
+            \caption{Classifier-free Diffusion Guidance}
+    \end{figure}
+
+\only<2->{
+\begin{itemize}
+    \item{Low-temperature optimizes \alert{FID score}}
+    \only<3->{\item{High-temperature optimizes \alert{Inception score}}}
+    \end{itemize}
+}
+
+\only<4>{
+    We can do a \alert{trade-of} by following more $p_\phi$ or $p_\theta$ between \alert{exploration and distance to the original distribution}.
+}
+
+\end{frame}
+
+\section{State-of-the-art: Video generator}
 
 \end{document}
