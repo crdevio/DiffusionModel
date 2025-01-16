@@ -1,0 +1,552 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{bengio2014representationlearningreviewnew}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=da21e966c02c3cfd33d74369c7435c1a}{%
+           family={Vincent},
+           familyi={V\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{54af866264cacba174612c82da34a2d7}
+      \strng{fullhash}{54af866264cacba174612c82da34a2d7}
+      \strng{bibnamehash}{54af866264cacba174612c82da34a2d7}
+      \strng{authorbibnamehash}{54af866264cacba174612c82da34a2d7}
+      \strng{authornamehash}{54af866264cacba174612c82da34a2d7}
+      \strng{authorfullhash}{54af866264cacba174612c82da34a2d7}
+      \field{labelalpha}{BCV14}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Representation Learning: A Review and New Perspectives}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1206.5538
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1206.5538
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1206.5538
+      \endverb
+    \endentry
+    \entry{dhariwalDiffusionModelsBeat2021}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
+           family={Dhariwal},
+           familyi={D\bibinitperiod},
+           given={Prafulla},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fc19c0dc057e2a02419916b39da6895b}{%
+           family={Nichol},
+           familyi={N\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{04ec986932b1c7c54e6fc336705bf30a}
+      \strng{fullhash}{04ec986932b1c7c54e6fc336705bf30a}
+      \strng{bibnamehash}{04ec986932b1c7c54e6fc336705bf30a}
+      \strng{authorbibnamehash}{04ec986932b1c7c54e6fc336705bf30a}
+      \strng{authornamehash}{04ec986932b1c7c54e6fc336705bf30a}
+      \strng{authorfullhash}{04ec986932b1c7c54e6fc336705bf30a}
+      \field{labelalpha}{DN21}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. We achieve this on unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, we further improve sample quality with classifier guidance: a simple, compute-efficient method for trading off diversity for fidelity using gradients from a classifier. We achieve an FID of 2.97 on ImageNet 128{\texttimes}128, 4.59 on ImageNet 256{\texttimes}256, and 7.72 on ImageNet 512{\texttimes}512, and we match BigGAN-deep even with as few as 25 forward passes per sample, all while maintaining better coverage of the distribution. Finally, we find that classifier guidance combines well with upsampling diffusion models, further improving FID to 3.94 on ImageNet 256{\texttimes}256 and 3.85 on ImageNet 512{\texttimes}512. We release our code at https://github.com/openai/guided-diffusion.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{arXiv:2105.05233}
+      \field{title}{Diffusion {{Models Beat GANs}} on {{Image Synthesis}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2105.05233
+      \endverb
+      \verb{eprint}
+      \verb 2105.05233
+      \endverb
+      \verb{file}
+      \verb C:\Users\cleme\Zotero\storage\TLETAXYB\Dhariwal et Nichol - 2021 - Diffusion Models Beat GANs on Image Synthesis.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2105.05233
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2105.05233
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{hoDenoisingDiffusionProbabilistic2020}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=2ac2ca10b22e4d13af1767e87495412f}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=31ac0835ffc3ba6d612252522a6a2011}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e28d4ee199593959d8c29980a64f1974}{%
+           family={Abbeel},
+           familyi={A\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{fullhash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{bibnamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{authorbibnamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{authornamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{authorfullhash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \field{labelalpha}{HJA20}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at https://github.com/hojonathanho/diffusion.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{arXiv:2006.11239}
+      \field{title}{Denoising {{Diffusion Probabilistic Models}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2006.11239
+      \endverb
+      \verb{eprint}
+      \verb 2006.11239
+      \endverb
+      \verb{file}
+      \verb C:\Users\cleme\Zotero\storage\NFJWTQS6\Ho et al. - 2020 - Denoising Diffusion Probabilistic Models.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2006.11239
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2006.11239
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{hoClassifierFreeDiffusionGuidance2022}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=2ac2ca10b22e4d13af1767e87495412f}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e6f76e1a4d058df028530916774ad3a7}{%
+           family={Salimans},
+           familyi={S\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5bea2a023d11b26818cce24cce71fc6f}
+      \strng{fullhash}{5bea2a023d11b26818cce24cce71fc6f}
+      \strng{bibnamehash}{5bea2a023d11b26818cce24cce71fc6f}
+      \strng{authorbibnamehash}{5bea2a023d11b26818cce24cce71fc6f}
+      \strng{authornamehash}{5bea2a023d11b26818cce24cce71fc6f}
+      \strng{authorfullhash}{5bea2a023d11b26818cce24cce71fc6f}
+      \field{labelalpha}{HS22}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Classifier guidance is a recently introduced method to trade off mode coverage and sample fidelity in conditional diffusion models post training, in the same spirit as low temperature sampling or truncation in other types of generative models. Classifier guidance combines the score estimate of a diffusion model with the gradient of an image classifier and thereby requires training an image classifier separate from the diffusion model. It also raises the question of whether guidance can be performed without a classifier. We show that guidance can be indeed performed by a pure generative model without such a classifier: in what we call classifier-free guidance, we jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity similar to that obtained using classifier guidance.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{arXiv:2207.12598}
+      \field{title}{Classifier-{{Free Diffusion Guidance}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2207.12598
+      \endverb
+      \verb{eprint}
+      \verb 2207.12598
+      \endverb
+      \verb{file}
+      \verb C:\Users\cleme\Zotero\storage\FGCI42AI\Ho et Salimans - 2022 - Classifier-Free Diffusion Guidance.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2207.12598
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2207.12598
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+    \endentry
+    \entry{nicholImprovedDenoisingDiffusion2021}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=fc19c0dc057e2a02419916b39da6895b}{%
+           family={Nichol},
+           familyi={N\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
+           family={Dhariwal},
+           familyi={D\bibinitperiod},
+           given={Prafulla},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b4c3cea6f8fe6a592dcfe3186e1ddbc6}
+      \strng{fullhash}{b4c3cea6f8fe6a592dcfe3186e1ddbc6}
+      \strng{bibnamehash}{b4c3cea6f8fe6a592dcfe3186e1ddbc6}
+      \strng{authorbibnamehash}{b4c3cea6f8fe6a592dcfe3186e1ddbc6}
+      \strng{authornamehash}{b4c3cea6f8fe6a592dcfe3186e1ddbc6}
+      \strng{authorfullhash}{b4c3cea6f8fe6a592dcfe3186e1ddbc6}
+      \field{labelalpha}{ND21}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Denoising diffusion probabilistic models (DDPM) are a class of generative models which have recently been shown to produce excellent samples. We show that with a few simple modifications, DDPMs can also achieve competitive loglikelihoods while maintaining high sample quality. Additionally, we find that learning variances of the reverse diffusion process allows sampling with an order of magnitude fewer forward passes with a negligible difference in sample quality, which is important for the practical deployment of these models. We additionally use precision and recall to compare how well DDPMs and GANs cover the target distribution. Finally, we show that the sample quality and likelihood of these models scale smoothly with model capacity and training compute, making them easily scalable. We release our code at https://github.com/ openai/improved-diffusion.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{arXiv:2102.09672}
+      \field{title}{Improved {{Denoising Diffusion Probabilistic Models}}}
+      \field{urlday}{9}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2102.09672
+      \endverb
+      \verb{eprint}
+      \verb 2102.09672
+      \endverb
+      \verb{file}
+      \verb C:\Users\cleme\Zotero\storage\HXRQB9LM\Nichol et Dhariwal - 2021 - Improved Denoising Diffusion Probabilistic Models.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2102.09672
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2102.09672
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{radford2021learningtransferablevisualmodels}{misc}{}
+      \name{author}{12}{}{%
+        {{hash=a812c46caad94fc8701be37871f303ba}{%
+           family={Radford},
+           familyi={R\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod}}}%
+        {{hash=37a96525bc70870f8509160f7eccf4b7}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jong\bibnamedelima Wook},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=4d5d078d439e163a02d9d1ba0002bb12}{%
+           family={Hallacy},
+           familyi={H\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=82063a12702e7b2c026ae0ff03b8f102}{%
+           family={Ramesh},
+           familyi={R\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e5e3e996c0a95da7e97cae269822bbef}{%
+           family={Goh},
+           familyi={G\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=abe4801e322e893b23785fd6d0800b5c}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Sandhini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3c1d9a663596faaf544c1a65aac581be}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1e84eff933be9f4887bf369cf181bf12}{%
+           family={Askell},
+           familyi={A\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2321e04943bcadb0275819652b980521}{%
+           family={Mishkin},
+           familyi={M\bibinitperiod},
+           given={Pamela},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1480c861b1a73e1d1de1b227e985b179}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c3a5cc5e520e0d1a9f8bbf377c74cd27}{%
+           family={Krueger},
+           familyi={K\bibinitperiod},
+           given={Gretchen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca3baa5a22057195db1c71be39b4c922}
+      \strng{fullhash}{de02402f48bd17333411ead3b5ca6de9}
+      \strng{bibnamehash}{ca3baa5a22057195db1c71be39b4c922}
+      \strng{authorbibnamehash}{ca3baa5a22057195db1c71be39b4c922}
+      \strng{authornamehash}{ca3baa5a22057195db1c71be39b4c922}
+      \strng{authorfullhash}{de02402f48bd17333411ead3b5ca6de9}
+      \field{labelalpha}{Rad+21}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Learning Transferable Visual Models From Natural Language Supervision}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2103.00020
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2103.00020
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2103.00020
+      \endverb
+    \endentry
+    \entry{tormos2024dataaugmentationdiffusionmodels}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=9a3bd9edccfa7018845075f48ae19708}{%
+           family={Tormos},
+           familyi={T\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1932dc346f60f1ea19bbcefe6c6ce9c8}{%
+           family={Llauradó},
+           familyi={L\bibinitperiod},
+           given={Blanca},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c0617c79eaae18e1bf16100860a49e0d}{%
+           family={Núñez},
+           familyi={N\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ab2dd2276ecf8d77ffc7d7559816af0e}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1b042c3007cdffdf05c984148410abf8}{%
+           family={Garcia-Gasulla},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cb79ec8507bda56b6ffd35242dc80197}{%
+           family={Béjar},
+           familyi={B\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{25fee552a7757e4e5744ba7ab7587ff4}
+      \strng{fullhash}{bc1154775d30ba051e76dc880f29a5a4}
+      \strng{bibnamehash}{25fee552a7757e4e5744ba7ab7587ff4}
+      \strng{authorbibnamehash}{25fee552a7757e4e5744ba7ab7587ff4}
+      \strng{authornamehash}{25fee552a7757e4e5744ba7ab7587ff4}
+      \strng{authorfullhash}{bc1154775d30ba051e76dc880f29a5a4}
+      \field{labelalpha}{Tor+24}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Data Augmentation with Diffusion Models for Colon Polyp Localization on the Low Data Regime: How much real data is enough?}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2411.18926
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2411.18926
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2411.18926
+      \endverb
+    \endentry
+    \entry{trabucco2023effectivedataaugmentationdiffusion}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=8cd1228de1236f7494c2b93e428e24e8}{%
+           family={Trabucco},
+           familyi={T\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f8cb6ddf6997e97d1c55dc9ad2634ebd}{%
+           family={Doherty},
+           familyi={D\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ac0bf11a73eb1688e11899f4e743cdd2}{%
+           family={Gurinas},
+           familyi={G\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd2be300d445e9f6db7808f9533e66cb}{%
+           family={Salakhutdinov},
+           familyi={S\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{67639656bd50fb8705c7392d4e7e4c7f}
+      \strng{fullhash}{f1f4c36b943cdd2fa0af4c4a2b98786d}
+      \strng{bibnamehash}{67639656bd50fb8705c7392d4e7e4c7f}
+      \strng{authorbibnamehash}{67639656bd50fb8705c7392d4e7e4c7f}
+      \strng{authornamehash}{67639656bd50fb8705c7392d4e7e4c7f}
+      \strng{authorfullhash}{f1f4c36b943cdd2fa0af4c4a2b98786d}
+      \field{labelalpha}{Tra+23}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Effective Data Augmentation With Diffusion Models}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2302.07944
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2302.07944
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2302.07944
+      \endverb
+    \endentry
+    \entry{zhangAddingConditionalControl2023}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=f5c0f0a3df2f70fe083e104bdb76106d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lvmin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0eb63bbaf2838d9027cabeb7c9cbb26a}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Anyi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2f600a42bcab8fe8771b080139adcc0a}{%
+           family={Agrawala},
+           familyi={A\bibinitperiod},
+           given={Maneesh},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{2bc8ddb67541ee6ac4fe25593bb995a2}
+      \strng{fullhash}{2bc8ddb67541ee6ac4fe25593bb995a2}
+      \strng{bibnamehash}{2bc8ddb67541ee6ac4fe25593bb995a2}
+      \strng{authorbibnamehash}{2bc8ddb67541ee6ac4fe25593bb995a2}
+      \strng{authornamehash}{2bc8ddb67541ee6ac4fe25593bb995a2}
+      \strng{authorfullhash}{2bc8ddb67541ee6ac4fe25593bb995a2}
+      \field{labelalpha}{ZRA23}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present ControlNet, a neural network architecture to add spatial conditioning controls to large, pretrained textto-image diffusion models. ControlNet locks the productionready large diffusion models, and reuses their deep and robust encoding layers pretrained with billions of images as a strong backbone to learn a diverse set of conditional controls. The neural architecture is connected with ``zero convolutions'' (zero-initialized convolution layers) that progressively grow the parameters from zero and ensure that no harmful noise could affect the finetuning. We test various conditioning controls, e.g., edges, depth, segmentation, human pose, etc., with Stable Diffusion, using single or multiple conditions, with or without prompts. We show that the training of ControlNets is robust with small ({$<$}50k) and large ({$>$}1m) datasets. Extensive results show that ControlNet may facilitate wider applications to control image diffusion models.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{arXiv:2302.05543}
+      \field{title}{Adding {{Conditional Control}} to {{Text-to-Image Diffusion Models}}}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2302.05543
+      \endverb
+      \verb{eprint}
+      \verb 2302.05543
+      \endverb
+      \verb{file}
+      \verb C:\Users\cleme\Zotero\storage\LZATVL6G\Zhang et al. - 2023 - Adding Conditional Control to Text-to-Image Diffusion Models.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2302.05543
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2302.05543
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Human-Computer Interaction,Computer Science - Multimedia}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
