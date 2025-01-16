@@ -1,4 +1,5 @@
-\beamer@sectionintoc {1}{First generation: Denoising Diffusion Probabilistic Models}{2}{0}{1}
-\beamer@sectionintoc {2}{Second generation}{27}{0}{2}
-\beamer@sectionintoc {3}{Classifier Guidance}{44}{0}{3}
-\beamer@sectionintoc {4}{State-of-the-art: Video generator}{59}{0}{4}
+\beamer@sectionintoc {1}{First generation: Denoising Diffusion Probabilistic Models}{3}{0}{1}
+\beamer@sectionintoc {2}{Amelioration}{26}{0}{2}
+\beamer@sectionintoc {3}{Classifier Guidance}{43}{0}{3}
+\beamer@sectionintoc {4}{GLIDE: draw what you prompt}{58}{0}{4}
+\beamer@sectionintoc {5}{State-of-the-art brief review}{65}{0}{5}

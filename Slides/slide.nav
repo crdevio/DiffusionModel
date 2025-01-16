@@ -1,51 +1,72 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\beamer@sectionpages {1}{1}}
-\headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\sectionentry {1}{First generation: Denoising Diffusion Probabilistic Models}{2}{First generation: Denoising Diffusion Probabilistic Models}{0}}
-\headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\slideentry {1}{0}{2}{3/10}{}{0}}
-\headcommand {\beamer@framepages {3}{10}}
-\headcommand {\slideentry {1}{0}{3}{11/13}{}{0}}
-\headcommand {\beamer@framepages {11}{13}}
-\headcommand {\slideentry {1}{0}{4}{14/21}{}{0}}
-\headcommand {\beamer@framepages {14}{21}}
-\headcommand {\slideentry {1}{0}{5}{22/25}{}{0}}
-\headcommand {\beamer@framepages {22}{25}}
-\headcommand {\slideentry {1}{0}{6}{26/26}{}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{First generation: Denoising Diffusion Probabilistic Models}{3}{First generation: Denoising Diffusion Probabilistic Models}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/12}{}{0}}
+\headcommand {\beamer@framepages {4}{12}}
+\headcommand {\slideentry {1}{0}{3}{13/14}{}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\slideentry {1}{0}{4}{15/16}{}{0}}
+\headcommand {\beamer@framepages {15}{16}}
+\headcommand {\slideentry {1}{0}{5}{17/19}{}{0}}
+\headcommand {\beamer@framepages {17}{19}}
+\headcommand {\slideentry {1}{0}{6}{20/21}{}{0}}
+\headcommand {\beamer@framepages {20}{21}}
+\headcommand {\slideentry {1}{0}{7}{22/23}{}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\slideentry {1}{0}{8}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {1}{0}{9}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@sectionpages {3}{25}}
+\headcommand {\beamer@subsectionpages {3}{25}}
+\headcommand {\sectionentry {2}{Amelioration}{26}{Amelioration}{0}}
+\headcommand {\slideentry {2}{0}{1}{26/26}{}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\beamer@sectionpages {2}{26}}
-\headcommand {\beamer@subsectionpages {2}{26}}
-\headcommand {\sectionentry {2}{Second generation}{27}{Second generation}{0}}
-\headcommand {\slideentry {2}{0}{1}{27/27}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{27/27}{}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {2}{0}{2}{28/31}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{28/31}{}{0}}
 \headcommand {\beamer@framepages {28}{31}}
-\headcommand {\slideentry {2}{0}{3}{32/37}{}{0}}
+\headcommand {\slideentry {2}{0}{4}{32/37}{}{0}}
 \headcommand {\beamer@framepages {32}{37}}
-\headcommand {\slideentry {2}{0}{4}{38/42}{}{0}}
+\headcommand {\slideentry {2}{0}{5}{38/42}{}{0}}
 \headcommand {\beamer@framepages {38}{42}}
-\headcommand {\slideentry {2}{0}{5}{43/43}{}{0}}
+\headcommand {\beamer@sectionpages {26}{42}}
+\headcommand {\beamer@subsectionpages {26}{42}}
+\headcommand {\sectionentry {3}{Classifier Guidance}{43}{Classifier Guidance}{0}}
+\headcommand {\slideentry {3}{0}{1}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@sectionpages {27}{43}}
-\headcommand {\beamer@subsectionpages {27}{43}}
-\headcommand {\sectionentry {3}{Classifier Guidance}{44}{Classifier Guidance}{0}}
-\headcommand {\slideentry {3}{0}{1}{44/44}{}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {3}{0}{2}{45/47}{}{0}}
-\headcommand {\beamer@framepages {45}{47}}
-\headcommand {\slideentry {3}{0}{3}{48/54}{}{0}}
-\headcommand {\beamer@framepages {48}{54}}
-\headcommand {\slideentry {3}{0}{4}{55/58}{}{0}}
-\headcommand {\beamer@framepages {55}{58}}
-\headcommand {\beamer@sectionpages {44}{58}}
-\headcommand {\beamer@subsectionpages {44}{58}}
-\headcommand {\sectionentry {4}{State-of-the-art: Video generator}{59}{State-of-the-art: Video generator}{0}}
-\headcommand {\slideentry {4}{0}{1}{59/59}{}{0}}
-\headcommand {\beamer@framepages {59}{59}}
-\headcommand {\beamer@partpages {1}{59}}
-\headcommand {\beamer@subsectionpages {59}{59}}
-\headcommand {\beamer@sectionpages {59}{59}}
-\headcommand {\beamer@documentpages {59}}
-\headcommand {\gdef \inserttotalframenumber {12}}
+\headcommand {\slideentry {3}{0}{2}{44/46}{}{0}}
+\headcommand {\beamer@framepages {44}{46}}
+\headcommand {\slideentry {3}{0}{3}{47/53}{}{0}}
+\headcommand {\beamer@framepages {47}{53}}
+\headcommand {\slideentry {3}{0}{4}{54/57}{}{0}}
+\headcommand {\beamer@framepages {54}{57}}
+\headcommand {\beamer@sectionpages {43}{57}}
+\headcommand {\beamer@subsectionpages {43}{57}}
+\headcommand {\sectionentry {4}{GLIDE: draw what you prompt}{58}{GLIDE: draw what you prompt}{0}}
+\headcommand {\slideentry {4}{0}{1}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {4}{0}{2}{59/60}{}{0}}
+\headcommand {\beamer@framepages {59}{60}}
+\headcommand {\slideentry {4}{0}{3}{61/63}{}{0}}
+\headcommand {\beamer@framepages {61}{63}}
+\headcommand {\slideentry {4}{0}{4}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\beamer@sectionpages {58}{64}}
+\headcommand {\beamer@subsectionpages {58}{64}}
+\headcommand {\sectionentry {5}{State-of-the-art brief review}{65}{State-of-the-art brief review}{0}}
+\headcommand {\slideentry {5}{0}{1}{65/65}{}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {5}{0}{2}{66/68}{}{0}}
+\headcommand {\beamer@framepages {66}{68}}
+\headcommand {\beamer@partpages {1}{68}}
+\headcommand {\beamer@subsectionpages {65}{68}}
+\headcommand {\beamer@sectionpages {65}{68}}
+\headcommand {\beamer@documentpages {68}}
+\headcommand {\gdef \inserttotalframenumber {20}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.10)  9 JAN 2025 16:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.10)  14 JAN 2025 13:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -817,207 +817,217 @@ Overfull \vbox (15.63992pt too high) detected at line 54
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+<imgs/evolution_meme.jpg, id=46, 501.875pt x 688.5725pt>
+File: imgs/evolution_meme.jpg Graphic file (type jpg)
+<use imgs/evolution_meme.jpg>
+Package pdftex.def Info: imgs/evolution_meme.jpg  used on input line 65.
+(pdftex.def)             Requested size: 153.64493pt x 210.79704pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 56.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [2
-
-]
-<imgs/mnist_sample_digits.png, id=49, 798.985pt x 692.5875pt>
-File: imgs/mnist_sample_digits.png Graphic file (type png)
-<use imgs/mnist_sample_digits.png>
-Package pdftex.def Info: imgs/mnist_sample_digits.png  used on input line 110.
-(pdftex.def)             Requested size: 153.64493pt x 133.17819pt.
-
+)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <14.4> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 110.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 65.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 110.
+(Font)              using `OT1/cmss/bx/n' instead on input line 65.
 
 
-Overfull \vbox (1.54118pt too high) detected at line 110
+Overfull \vbox (3.86778pt too high) detected at line 65
  []
 
-[3
+[2
+
+ <./imgs/evolution_meme.jpg>] [3
+
+]
+<imgs/ddpm_paper.png, id=60, 542.62724pt x 164.41425pt>
+File: imgs/ddpm_paper.png Graphic file (type png)
+<use imgs/ddpm_paper.png>
+Package pdftex.def Info: imgs/ddpm_paper.png  used on input line 128.
+(pdftex.def)             Requested size: 245.83282pt x 74.48495pt.
+ [4
+
+ <./imgs/ddpm_paper.png>]
+<imgs/mnist_sample_digits.png, id=68, 798.985pt x 692.5875pt>
+File: imgs/mnist_sample_digits.png Graphic file (type png)
+<use imgs/mnist_sample_digits.png>
+Package pdftex.def Info: imgs/mnist_sample_digits.png  used on input line 128.
+(pdftex.def)             Requested size: 153.64493pt x 133.17819pt.
+
+Overfull \vbox (1.54118pt too high) detected at line 128
+ []
+
+[5
 
  <./imgs/mnist_sample_digits.png>]
-<imgs/frame1.png, id=60, 348.30125pt x 347.2975pt>
+<imgs/frame1.png, id=77, 348.30125pt x 347.2975pt>
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
- [4
+ [6
 
  <./imgs/frame1.png>]
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
-<imgs/frame2.png, id=67, 348.30125pt x 347.2975pt>
+<imgs/frame2.png, id=84, 348.30125pt x 347.2975pt>
 File: imgs/frame2.png Graphic file (type png)
 <use imgs/frame2.png>
-Package pdftex.def Info: imgs/frame2.png  used on input line 110.
+Package pdftex.def Info: imgs/frame2.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
- [5
+ [7
 
  <./imgs/frame2.png>]
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame2.png Graphic file (type png)
 <use imgs/frame2.png>
-Package pdftex.def Info: imgs/frame2.png  used on input line 110.
+Package pdftex.def Info: imgs/frame2.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
-<imgs/frame3.png, id=74, 348.30125pt x 347.2975pt>
+<imgs/frame3.png, id=92, 348.30125pt x 347.2975pt>
 File: imgs/frame3.png Graphic file (type png)
 <use imgs/frame3.png>
-Package pdftex.def Info: imgs/frame3.png  used on input line 110.
+Package pdftex.def Info: imgs/frame3.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
- [6
+ [8
 
  <./imgs/frame3.png>]
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame2.png Graphic file (type png)
 <use imgs/frame2.png>
-Package pdftex.def Info: imgs/frame2.png  used on input line 110.
+Package pdftex.def Info: imgs/frame2.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame3.png Graphic file (type png)
 <use imgs/frame3.png>
-Package pdftex.def Info: imgs/frame3.png  used on input line 110.
+Package pdftex.def Info: imgs/frame3.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
-<imgs/frame52.png, id=81, 348.30125pt x 347.2975pt>
+<imgs/frame52.png, id=99, 348.30125pt x 347.2975pt>
 File: imgs/frame52.png Graphic file (type png)
 <use imgs/frame52.png>
-Package pdftex.def Info: imgs/frame52.png  used on input line 110.
+Package pdftex.def Info: imgs/frame52.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
- [7
+ [9
 
  <./imgs/frame52.png>]
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame2.png Graphic file (type png)
 <use imgs/frame2.png>
-Package pdftex.def Info: imgs/frame2.png  used on input line 110.
+Package pdftex.def Info: imgs/frame2.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame3.png Graphic file (type png)
 <use imgs/frame3.png>
-Package pdftex.def Info: imgs/frame3.png  used on input line 110.
+Package pdftex.def Info: imgs/frame3.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame52.png Graphic file (type png)
 <use imgs/frame52.png>
-Package pdftex.def Info: imgs/frame52.png  used on input line 110.
+Package pdftex.def Info: imgs/frame52.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
-<imgs/framelot.png, id=89, 348.30125pt x 347.2975pt>
+<imgs/framelot.png, id=106, 348.30125pt x 347.2975pt>
 File: imgs/framelot.png Graphic file (type png)
 <use imgs/framelot.png>
-Package pdftex.def Info: imgs/framelot.png  used on input line 110.
+Package pdftex.def Info: imgs/framelot.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
- [8
+ [10
 
  <./imgs/framelot.png>]
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame2.png Graphic file (type png)
 <use imgs/frame2.png>
-Package pdftex.def Info: imgs/frame2.png  used on input line 110.
+Package pdftex.def Info: imgs/frame2.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame3.png Graphic file (type png)
 <use imgs/frame3.png>
-Package pdftex.def Info: imgs/frame3.png  used on input line 110.
+Package pdftex.def Info: imgs/frame3.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame52.png Graphic file (type png)
 <use imgs/frame52.png>
-Package pdftex.def Info: imgs/frame52.png  used on input line 110.
+Package pdftex.def Info: imgs/frame52.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/framelot.png Graphic file (type png)
 <use imgs/framelot.png>
-Package pdftex.def Info: imgs/framelot.png  used on input line 110.
+Package pdftex.def Info: imgs/framelot.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
-<imgs/framerandom.png, id=96, 348.30125pt x 347.2975pt>
+<imgs/framerandom.png, id=113, 348.30125pt x 347.2975pt>
 File: imgs/framerandom.png Graphic file (type png)
 <use imgs/framerandom.png>
-Package pdftex.def Info: imgs/framerandom.png  used on input line 110.
+Package pdftex.def Info: imgs/framerandom.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
- [9
+ [11
 
  <./imgs/framerandom.png>]
 File: imgs/frame1.png Graphic file (type png)
 <use imgs/frame1.png>
-Package pdftex.def Info: imgs/frame1.png  used on input line 110.
+Package pdftex.def Info: imgs/frame1.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame2.png Graphic file (type png)
 <use imgs/frame2.png>
-Package pdftex.def Info: imgs/frame2.png  used on input line 110.
+Package pdftex.def Info: imgs/frame2.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame3.png Graphic file (type png)
 <use imgs/frame3.png>
-Package pdftex.def Info: imgs/frame3.png  used on input line 110.
+Package pdftex.def Info: imgs/frame3.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/frame52.png Graphic file (type png)
 <use imgs/frame52.png>
-Package pdftex.def Info: imgs/frame52.png  used on input line 110.
+Package pdftex.def Info: imgs/frame52.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/framelot.png Graphic file (type png)
 <use imgs/framelot.png>
-Package pdftex.def Info: imgs/framelot.png  used on input line 110.
+Package pdftex.def Info: imgs/framelot.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 File: imgs/framerandom.png Graphic file (type png)
 <use imgs/framerandom.png>
-Package pdftex.def Info: imgs/framerandom.png  used on input line 110.
+Package pdftex.def Info: imgs/framerandom.png  used on input line 128.
 (pdftex.def)             Requested size: 61.45703pt x 61.27611pt.
 
-Overfull \vbox (13.14253pt too high) detected at line 110
+Overfull \vbox (13.14253pt too high) detected at line 128
  []
 
-[10
+[12
 
 ]
-<imgs/ho_diffusion_process.png, id=110, 459.51675pt x 84.91725pt>
+<imgs/ho_diffusion_process.png, id=127, 459.51675pt x 84.91725pt>
 File: imgs/ho_diffusion_process.png Graphic file (type png)
 <use imgs/ho_diffusion_process.png>
-Package pdftex.def Info: imgs/ho_diffusion_process.png  used on input line 127.
+Package pdftex.def Info: imgs/ho_diffusion_process.png  used on input line 144.
 (pdftex.def)             Requested size: 307.28987pt x 56.78801pt.
- [11
+ [13
 
  <./imgs/ho_diffusion_process.png>]
 File: imgs/ho_diffusion_process.png Graphic file (type png)
 <use imgs/ho_diffusion_process.png>
-Package pdftex.def Info: imgs/ho_diffusion_process.png  used on input line 127.
+Package pdftex.def Info: imgs/ho_diffusion_process.png  used on input line 144.
 (pdftex.def)             Requested size: 307.28987pt x 56.78801pt.
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 127.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 144.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [12
+) [14
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-File: imgs/ho_diffusion_process.png Graphic file (type png)
-<use imgs/ho_diffusion_process.png>
-Package pdftex.def Info: imgs/ho_diffusion_process.png  used on input line 127.
-(pdftex.def)             Requested size: 307.28987pt x 56.78801pt.
- [13
-
-] [14
-
-] [15
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [15
 
 ] [16
 
@@ -1027,48 +1037,110 @@ Package pdftex.def Info: imgs/ho_diffusion_process.png  used on input line 127.
 
 ] [19
 
-] [20
+]
+<imgs/ho_implementation_init.png, id=170, 570.933pt x 426.393pt>
+File: imgs/ho_implementation_init.png Graphic file (type png)
+<use imgs/ho_implementation_init.png>
+Package pdftex.def Info: imgs/ho_implementation_init.png  used on input line 198.
+(pdftex.def)             Requested size: 245.83282pt x 183.59915pt.
 
-] [21
+Overfull \vbox (7.91399pt too high) detected at line 198
+ []
 
-] [22
+[20
 
-] [23
+ <./imgs/ho_implementation_init.png>]
+<imgs/ho_gaussian_res.png, id=177, 1149.093pt x 287.6346pt>
+File: imgs/ho_gaussian_res.png Graphic file (type png)
+<use imgs/ho_gaussian_res.png>
+Package pdftex.def Info: imgs/ho_gaussian_res.png  used on input line 198.
+(pdftex.def)             Requested size: 307.28987pt x 76.92064pt.
+ [21
 
-] [24
+ <./imgs/ho_gaussian_res.png>]
+<imgs/spirale_dataset.png, id=185, 570.933pt x 426.393pt>
+File: imgs/spirale_dataset.png Graphic file (type png)
+<use imgs/spirale_dataset.png>
+Package pdftex.def Info: imgs/spirale_dataset.png  used on input line 212.
+(pdftex.def)             Requested size: 245.83282pt x 183.59915pt.
 
-] [25
+Overfull \vbox (7.91399pt too high) detected at line 212
+ []
 
-] [26
+[22
 
-] [27
+ <./imgs/spirale_dataset.png>]
+<imgs/res_spirale.png, id=192, 1148.3703pt x 267.399pt>
+File: imgs/res_spirale.png Graphic file (type png)
+<use imgs/res_spirale.png>
+Package pdftex.def Info: imgs/res_spirale.png  used on input line 212.
+(pdftex.def)             Requested size: 307.28987pt x 71.55402pt.
+ [23
+
+ <./imgs/res_spirale.png>]
+<imgs/unet-architecture.png, id=199, 1027.84pt x 684.5575pt>
+File: imgs/unet-architecture.png Graphic file (type png)
+<use imgs/unet-architecture.png>
+Package pdftex.def Info: imgs/unet-architecture.png  used on input line 222.
+(pdftex.def)             Requested size: 245.83282pt x 163.72264pt.
+
+Overfull \vbox (4.28572pt too high) detected at line 222
+ []
+
+[24
+
+ <./imgs/unet-architecture.png>]
+<imgs/mnist_res.jpg, id=206, 481.04718pt x 538.26094pt>
+File: imgs/mnist_res.jpg Graphic file (type jpg)
+<use imgs/mnist_res.jpg>
+Package pdftex.def Info: imgs/mnist_res.jpg  used on input line 228.
+(pdftex.def)             Requested size: 199.73653pt x 223.49733pt.
+
+Overfull \vbox (24.56807pt too high) detected at line 228
+ []
+
+[25
+
+ <./imgs/mnist_res.jpg>] [26
 
 ]
-<imgs/paper_gen2.png, id=206, 899.15926pt x 173.448pt>
+<imgs/papier_accelerer.png, id=219, 693.18974pt x 227.6505pt>
+File: imgs/papier_accelerer.png Graphic file (type png)
+<use imgs/papier_accelerer.png>
+Package pdftex.def Info: imgs/papier_accelerer.png  used on input line 244.
+(pdftex.def)             Requested size: 307.28987pt x 100.91682pt.
+
+Overfull \vbox (27.98961pt too high) detected at line 244
+ []
+
+[27
+
+ <./imgs/papier_accelerer.png>]
+<imgs/paper_gen2.png, id=226, 899.15926pt x 173.448pt>
 File: imgs/paper_gen2.png Graphic file (type png)
 <use imgs/paper_gen2.png>
-Package pdftex.def Info: imgs/paper_gen2.png  used on input line 197.
+Package pdftex.def Info: imgs/paper_gen2.png  used on input line 260.
 (pdftex.def)             Requested size: 307.28987pt x 59.2759pt.
  [28
 
  <./imgs/paper_gen2.png>]
 File: imgs/paper_gen2.png Graphic file (type png)
 <use imgs/paper_gen2.png>
-Package pdftex.def Info: imgs/paper_gen2.png  used on input line 197.
+Package pdftex.def Info: imgs/paper_gen2.png  used on input line 260.
 (pdftex.def)             Requested size: 307.28987pt x 59.2759pt.
  [29
 
 ]
 File: imgs/paper_gen2.png Graphic file (type png)
 <use imgs/paper_gen2.png>
-Package pdftex.def Info: imgs/paper_gen2.png  used on input line 197.
+Package pdftex.def Info: imgs/paper_gen2.png  used on input line 260.
 (pdftex.def)             Requested size: 307.28987pt x 59.2759pt.
  [30
 
 ]
 File: imgs/paper_gen2.png Graphic file (type png)
 <use imgs/paper_gen2.png>
-Package pdftex.def Info: imgs/paper_gen2.png  used on input line 197.
+Package pdftex.def Info: imgs/paper_gen2.png  used on input line 260.
 (pdftex.def)             Requested size: 307.28987pt x 59.2759pt.
  [31
 
@@ -1081,13 +1153,13 @@ Package pdftex.def Info: imgs/paper_gen2.png  used on input line 197.
 ] [35
 
 ]
-<imgs/ratio_tilde_et_normal.png, id=249, 714.87074pt x 456.5055pt>
+<imgs/ratio_tilde_et_normal.png, id=269, 714.87074pt x 456.5055pt>
 File: imgs/ratio_tilde_et_normal.png Graphic file (type png)
 <use imgs/ratio_tilde_et_normal.png>
-Package pdftex.def Info: imgs/ratio_tilde_et_normal.png  used on input line 230.
+Package pdftex.def Info: imgs/ratio_tilde_et_normal.png  used on input line 293.
 (pdftex.def)             Requested size: 245.83282pt x 156.98607pt.
 
-Overfull \vbox (2.41583pt too high) detected at line 230
+Overfull \vbox (2.41583pt too high) detected at line 293
  []
 
 [36
@@ -1106,110 +1178,158 @@ Overfull \vbox (2.41583pt too high) detected at line 230
 
 ] [43
 
-] [44
+]
+File: imgs/mnist_sample_digits.png Graphic file (type png)
+<use imgs/mnist_sample_digits.png>
+Package pdftex.def Info: imgs/mnist_sample_digits.png  used on input line 333.
+(pdftex.def)             Requested size: 122.91406pt x 106.54678pt.
+ [44
 
 ]
 File: imgs/mnist_sample_digits.png Graphic file (type png)
 <use imgs/mnist_sample_digits.png>
-Package pdftex.def Info: imgs/mnist_sample_digits.png  used on input line 273.
+Package pdftex.def Info: imgs/mnist_sample_digits.png  used on input line 333.
 (pdftex.def)             Requested size: 122.91406pt x 106.54678pt.
  [45
 
-]
-File: imgs/mnist_sample_digits.png Graphic file (type png)
-<use imgs/mnist_sample_digits.png>
-Package pdftex.def Info: imgs/mnist_sample_digits.png  used on input line 273.
-(pdftex.def)             Requested size: 122.91406pt x 106.54678pt.
- [46
+] [46
 
 ] [47
 
-] [48
-
 ]
-<imgs/langevin0.png, id=320, 433.62pt x 433.62pt>
+<imgs/langevin0.png, id=335, 433.62pt x 433.62pt>
 File: imgs/langevin0.png Graphic file (type png)
 <use imgs/langevin0.png>
-Package pdftex.def Info: imgs/langevin0.png  used on input line 294.
+Package pdftex.def Info: imgs/langevin0.png  used on input line 354.
 (pdftex.def)             Requested size: 153.64493pt x 153.64174pt.
 
-Overfull \vbox (37.64465pt too high) detected at line 294
+Overfull \vbox (37.64465pt too high) detected at line 354
+ []
+
+[48
+
+ <./imgs/langevin0.png>]
+<imgs/langevin1.png, id=342, 433.62pt x 433.62pt>
+File: imgs/langevin1.png Graphic file (type png)
+<use imgs/langevin1.png>
+Package pdftex.def Info: imgs/langevin1.png  used on input line 354.
+(pdftex.def)             Requested size: 153.64493pt x 153.64174pt.
+
+Overfull \vbox (37.64465pt too high) detected at line 354
  []
 
 [49
 
- <./imgs/langevin0.png>]
-<imgs/langevin1.png, id=328, 433.62pt x 433.62pt>
-File: imgs/langevin1.png Graphic file (type png)
-<use imgs/langevin1.png>
-Package pdftex.def Info: imgs/langevin1.png  used on input line 294.
+ <./imgs/langevin1.png>]
+<imgs/langevin3.png, id=350, 433.62pt x 433.62pt>
+File: imgs/langevin3.png Graphic file (type png)
+<use imgs/langevin3.png>
+Package pdftex.def Info: imgs/langevin3.png  used on input line 354.
 (pdftex.def)             Requested size: 153.64493pt x 153.64174pt.
 
-Overfull \vbox (37.64465pt too high) detected at line 294
+Overfull \vbox (37.64465pt too high) detected at line 354
  []
 
 [50
 
- <./imgs/langevin1.png>]
-<imgs/langevin3.png, id=335, 433.62pt x 433.62pt>
-File: imgs/langevin3.png Graphic file (type png)
-<use imgs/langevin3.png>
-Package pdftex.def Info: imgs/langevin3.png  used on input line 294.
+ <./imgs/langevin3.png>]
+<imgs/langevin4.png, id=357, 433.62pt x 433.62pt>
+File: imgs/langevin4.png Graphic file (type png)
+<use imgs/langevin4.png>
+Package pdftex.def Info: imgs/langevin4.png  used on input line 354.
 (pdftex.def)             Requested size: 153.64493pt x 153.64174pt.
 
-Overfull \vbox (37.64465pt too high) detected at line 294
+Overfull \vbox (37.64465pt too high) detected at line 354
  []
 
 [51
 
- <./imgs/langevin3.png>]
-<imgs/langevin4.png, id=342, 433.62pt x 433.62pt>
-File: imgs/langevin4.png Graphic file (type png)
-<use imgs/langevin4.png>
-Package pdftex.def Info: imgs/langevin4.png  used on input line 294.
-(pdftex.def)             Requested size: 153.64493pt x 153.64174pt.
+ <./imgs/langevin4.png>] [52
 
-Overfull \vbox (37.64465pt too high) detected at line 294
- []
-
-[52
-
- <./imgs/langevin4.png>] [53
-
-] [54
+] [53
 
 ]
-<imgs/guided_effect.png, id=359, 693.792pt x 136.71075pt>
+<imgs/guided_effect.png, id=374, 693.792pt x 136.71075pt>
 File: imgs/guided_effect.png Graphic file (type png)
 <use imgs/guided_effect.png>
-Package pdftex.def Info: imgs/guided_effect.png  used on input line 314.
+Package pdftex.def Info: imgs/guided_effect.png  used on input line 374.
 (pdftex.def)             Requested size: 307.28987pt x 60.55133pt.
- [55
+ [54
 
  <./imgs/guided_effect.png>]
 File: imgs/guided_effect.png Graphic file (type png)
 <use imgs/guided_effect.png>
-Package pdftex.def Info: imgs/guided_effect.png  used on input line 314.
+Package pdftex.def Info: imgs/guided_effect.png  used on input line 374.
+(pdftex.def)             Requested size: 307.28987pt x 60.55133pt.
+ [55
+
+]
+File: imgs/guided_effect.png Graphic file (type png)
+<use imgs/guided_effect.png>
+Package pdftex.def Info: imgs/guided_effect.png  used on input line 374.
 (pdftex.def)             Requested size: 307.28987pt x 60.55133pt.
  [56
 
 ]
 File: imgs/guided_effect.png Graphic file (type png)
 <use imgs/guided_effect.png>
-Package pdftex.def Info: imgs/guided_effect.png  used on input line 314.
+Package pdftex.def Info: imgs/guided_effect.png  used on input line 374.
 (pdftex.def)             Requested size: 307.28987pt x 60.55133pt.
  [57
 
-]
-File: imgs/guided_effect.png Graphic file (type png)
-<use imgs/guided_effect.png>
-Package pdftex.def Info: imgs/guided_effect.png  used on input line 314.
-(pdftex.def)             Requested size: 307.28987pt x 60.55133pt.
- [58
+] [58
 
 ] [59
 
+] [60
+
+] [61
+
+] [62
+
 ]
+<imgs/clip.png, id=424, 1074.0125pt x 762.85pt>
+File: imgs/clip.png Graphic file (type png)
+<use imgs/clip.png>
+Package pdftex.def Info: imgs/clip.png  used on input line 401.
+(pdftex.def)             Requested size: 245.83282pt x 174.60208pt.
+
+Overfull \vbox (42.35675pt too high) detected at line 401
+ []
+
+[63
+
+ <./imgs/clip.png>]
+<imgs/glide_result.png, id=431, 617.30624pt x 743.77875pt>
+File: imgs/glide_result.png Graphic file (type png)
+<use imgs/glide_result.png>
+Package pdftex.def Info: imgs/glide_result.png  used on input line 408.
+(pdftex.def)             Requested size: 245.83282pt x 296.20108pt.
+
+Overfull \vbox (97.27182pt too high) detected at line 408
+ []
+
+[64
+
+ <./imgs/glide_result.png>] [65
+
+] [66
+
+] [67
+
+]
+<imgs/controlnet-example.png, id=455, 632.3625pt x 769.87625pt>
+File: imgs/controlnet-example.png Graphic file (type png)
+<use imgs/controlnet-example.png>
+Package pdftex.def Info: imgs/controlnet-example.png  used on input line 426.
+(pdftex.def)             Requested size: 184.3758pt x 224.46837pt.
+
+Overfull \vbox (25.53911pt too high) detected at line 426
+ []
+
+[68
+
+ <./imgs/controlnet-example.png>]
 \tf@nav=\write6
 \openout6 = `slide.nav'.
 
@@ -1229,21 +1349,21 @@ L3 programming layer <2024-01-22>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `slide.out' has not changed.
-(rerunfilecheck)             Checksum: 02256769C2D7090206847A823E7E99CD;834.
+(rerunfilecheck)             Checksum: F2AAF715CE591E015A9E6FE3EF690329;976.
  ) 
 Here is how much of TeX's memory you used:
- 26911 strings out of 474222
- 540424 string characters out of 5748732
- 1939975 words of memory out of 5000000
- 48519 multiletter control sequences out of 15000+600000
+ 27051 strings out of 474222
+ 543594 string characters out of 5748732
+ 1937975 words of memory out of 5000000
+ 48640 multiletter control sequences out of 15000+600000
  571064 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,123p,1926b,809s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on slide.pdf (59 pages, 846402 bytes).
+Output written on slide.pdf (68 pages, 2628489 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 344 compressed objects within 4 object streams
- 123 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -52,18 +52,36 @@
 \date{\today}
 
 \maketitle
+\begin{frame}{What is Diffusion ?}
+    \begin{minipage}[c]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgs/evolution_meme.jpg}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[c]{0.35\textwidth}
+        \alert{Diffusion} is the \alert{state-of-the-art} generative process to generate images for creating \alert{new images near the original one}.  
+        It also allows to \alert{generate images from text}.
+    \end{minipage}
+\end{frame}
 
 \section{First generation: Denoising Diffusion Probabilistic Models}
 
+
+
 \begin{frame}{General Idea}
-    \only<1>{Consider the set of \alert{hand-written digits $D$}. Can you give a probability distribution $q$ such that \alert{$x \sim q(x)$ ?}
+    \only<1>{
+    \begin{figure}
+        \includegraphics[width=0.8\textwidth]{imgs/ddpm_paper.png}
+    \end{figure}
+    }
+    \only<2>{Consider the set of \alert{hand-written digits $D$}. Can you give a probability distribution $q$ such that \alert{$x \sim q(x)$ ?}
     \begin{figure}
         \centering
             \includegraphics[width=0.5\textwidth]{imgs/mnist_sample_digits.png}
             \caption{Source: ludwig.ai}
         \end{figure}
     }
-    \only<2->{
+    \only<3->{
         Consider the set of \alert{hand-written digits $D$}. It is hard to find $q$ such that \alert{$x \sim q(x)$}, we need a \alert{clever way to sample hand-written digits}. Consider the following process:
         \begin{figure}
             \centering
@@ -71,27 +89,27 @@
                 \centering
                 \includegraphics[width=\textwidth]{imgs/frame1.png}
             \end{minipage}%
-            \only<3->{
+            \only<4->{
                 \begin{minipage}{0.2\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{imgs/frame2.png}
                 \end{minipage}
-                \only<4->{
+                \only<5->{
                     \begin{minipage}{0.2\textwidth}
                         \centering
                         \includegraphics[width=\textwidth]{imgs/frame3.png}
                     \end{minipage}
-                    \only<5->{
+                    \only<6->{
                     \begin{minipage}{0.2\textwidth}
                         \centering
                         \includegraphics[width=\textwidth]{imgs/frame52.png}
                     \end{minipage}
-                    \only<6->{
+                    \only<7->{
                     \begin{minipage}{0.2\textwidth}
                         \centering
                         \includegraphics[width=\textwidth]{imgs/framelot.png}
                     \end{minipage}
-                    \only<7->{
+                    \only<8->{
                     \begin{minipage}{0.2\textwidth}
                         \centering
                         \includegraphics[width=\textwidth]{imgs/framerandom.png}
@@ -103,7 +121,7 @@
                 
             }
         \end{figure}
-        \only<8->{
+        \only<9->{
             Formally: $q(x_{t+1} \mid x_t) := \mathcal{N}(x_{t+1}; \sqrt{1 - \beta_t} x_t, \beta_t I)$ for some schedule $(\beta_t)_t$. Can we \alert{learn to reverse this process} ?
         }
     }
@@ -120,38 +138,29 @@
 
     \only<2->{
     \begin{itemize}
-        \item{Given a \alert{data image $x_0$}, we sample $(x_t)_{1:T}$ according to $q(x_{1:T} \mid x_0) := \prod_{t=1}^T q(x_t \mid x_{t-1})$,}
-        \only<3->{\item{Given a \alert{noisy image $x_t$} and $t$, we sample according to $p_\theta (x_{t-1} \mid x_t) := \mathcal{N}(x_{t-1} ; \mu_\theta(x_t,t), \Sigma_\theta (x_t,t))$}.}
+        \only<2->{\item{Given a \alert{noisy image $x_t$} and $t$, we sample according to $p_\theta (x_{t-1} \mid x_t) := \mathcal{N}(x_{t-1} ; \mu_\theta(x_t,t), \Sigma_\theta (x_t,t))$}.}
     \end{itemize}
     }
 \end{frame}
 
 \begin{frame}{Decreasing training data generation cost}
-    Given a data image $x_0$, compute $x_t$ takes \alert{$t$ sampling on $q$}. But a \alert{simple trick}, allows to do only one.
-    \uncover<2->{ 
-        
-    Remember that $q(x_{t+1} \mid x_t) := \mathcal{N}(x_{t+1}; \sqrt{1 - \beta_t} x_t, \beta_t I)$. Let $\alert{\alpha_t} = 1 - \beta_t$ and $\alert{\bar{\alpha_t}} = \prod_{i=1}^t \alpha_i$.
-    \only<3-7>{
-    \begin{align}
-    x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1 - \alpha_t} \epsilon_{t-1} \nonumber\\
-    \uncover<4->{
-    &= \sqrt{\alpha_t} \sqrt{\alpha_{t-1}} x_{t-2} + \sqrt{\alpha_t} \sqrt{1 - \alpha_t} \epsilon_{t-1} + \sqrt{1 - \alpha_t} \epsilon_{t-1} \nonumber\\
-    \uncover<6->{
-    &= \sqrt{\alpha_t \alpha_{t-1}} x_{t-2} + \sqrt{\alpha_t(1 - \alpha_{t-1}) + 1 - \alpha_t} \bar{\epsilon_t} \label{eq:toexplain}\\ 
-    \uncover<7->{
-    &= \sqrt{\alpha_t \alpha_{t-1}} x_{t-2} + \sqrt{1 - \alpha_t \alpha_{t-1}} \bar{\epsilon_t} \nonumber
-    }
-    }
-    }
-    \end{align}
-    \uncover<5-7>{Let $G_1 \sim \mathcal{N}(0,\sigma_1^2 I)$, $G_2 \sim \mathcal{N}(0,\sigma_2^2 I)$ , the sum of them gives $g_2 \sim \mathcal{N}(0,(\sigma_1^2 + \sigma_2^2) I)$.}
-    }
-    \only<8>{
+    Given a data image \(x_0\), computing \(x_t\) takes \alert{\(t\) samplings on \(q\)}. But a \alert{simple trick} allows us to do it in only one step.
 
-        We have \alert{$x_t = \sqrt{\bar{\alpha_t}}x_0 + \sqrt{1 - \bar{\alpha_t}} \epsilon$}.
+    \only<1>{ 
+    Remember that \(q(x_{t+1} \mid x_t) := \mathcal{N}(x_{t+1}; \sqrt{1 - \beta_t} x_t, \beta_t I)\). Let \(\alert{\alpha_t} = 1 - \beta_t\) and \(\alert{\bar{\alpha_t}} = \prod_{i=1}^t \alpha_i\).
+    \begin{align*}
+    x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1 - \alpha_t} \epsilon_{t-1} \\
+    &= \sqrt{\alpha_t} \sqrt{\alpha_{t-1}} x_{t-2} + \sqrt{\alpha_t} \sqrt{1 - \alpha_{t-1}} \epsilon_{t-1} + \sqrt{1 - \alpha_t} \epsilon_{t-1} \\
+    &= \sqrt{\alpha_t \alpha_{t-1}} x_{t-2} + \sqrt{\alpha_t (1 - \alpha_{t-1}) + (1 - \alpha_t)} \bar{\epsilon_t} \\ 
+    &= \sqrt{\alpha_t \alpha_{t-1}} x_{t-2} + \sqrt{1 - \alpha_t \alpha_{t-1}} \bar{\epsilon_t}
+    \end{align*}
+    Let \(G_1 \sim \mathcal{N}(0,\sigma_1^2 I)\), \(G_2 \sim \mathcal{N}(0,\sigma_2^2 I)\), the sum of them gives \(g_2 \sim \mathcal{N}(0,(\sigma_1^2 + \sigma_2^2) I)\).
     }
+    \only<2>{
+    We have \alert{\(x_t = \sqrt{\bar{\alpha_t}} x_0 + \sqrt{1 - \bar{\alpha_t}} \epsilon\)}.
     }
 \end{frame}
+
 
 \begin{frame}{Training}
 \only<1>{
@@ -159,17 +168,17 @@ For now, our model is learning $\mu$ and $\Sigma$, i.e. we sample according to
 \begin{align*}
 p_\theta (x_{t-1} \mid x_t) := \mathcal{N}(x_{t-1} ; \mu_\theta(x_t,t), \Sigma_\theta (x_t,t))
 \end{align*}
-They've found that \alert{fixing $\Sigma_\theta$} to a constant gives the same result. So,}
+They fixed \alert{fixing $\Sigma_\theta$} to a constant to simplify computations. So,}
 \begin{align*}
     p_\theta (x_{t-1} \mid x_t) := \mathcal{N}(x_{t-1} ; \mu_\theta(x_t,t), \sigma_t I)
 \end{align*}
-\only<2->{
-    The probability for our model to generate $x_0$ is $p_\theta (x_0) := \int p_\theta(x_{0:T}) dx_{1:T}$. \only<3->{Using negative log likelihood, approximations and computations, we want to minimize:
+    \only<2->{Using negative log likelihood, approximations and computations, we want to minimize:
     \begin{align*}
     E_q \left[\frac{1}{2 \sigma_t^2} \|\tilde{\mu}_t(x_t,x_0) - \mu_\theta(x_t,t)\|^2\right]
-    \end{align*} where $\tilde{\mu}$ is the optimal mean \alert{that depends on $x_0$ \only<3>{which we don't know}}. \only<4>{Using $x_t(x_0,\epsilon) = \sqrt{\bar{\alpha_t}} x_0 + \sqrt{1 - \bar{\alpha_t}} \epsilon$ we \alert{have a loss we can train on}.}
-    }
-}
+    \end{align*} where $\tilde{\mu}$ is the optimal mean \alert{that depends on $x_0$ \only<3>{which we don't know}}.
+    }\only<3>{We can also have $\epsilon$ using \begin{align*}
+    E_q \left[ \frac{\beta_t^2}{2 \sigma_t^2 \alpha_t (1 - \bar{\alpha_t})} \|\epsilon - \epsilon_\theta (\sqrt{\bar{\alpha_t}} x_0 + \sqrt{1 - \bar{\alpha_t}} \epsilon, t)\|\right]
+    \end{align*}}
     
 \end{frame}
 
@@ -202,7 +211,37 @@ They've found that \alert{fixing $\Sigma_\theta$} to a constant gives the same r
     
 \end{frame}
 
-\section{Second generation}
+
+\begin{frame}{Generating Images}
+    We need a \alert{model powerful enough to predict $\epsilon$} (or $\mu$) for \alert{2D images} (the size of $\epsilon$), for this we use \alert{UNet}.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.8\textwidth]{imgs/unet-architecture.png}
+    \end{figure}
+\end{frame}
+\begin{frame}{Our results - MNIST Generation}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.65\textwidth]{imgs/mnist_res.jpg}
+    \end{figure}
+\end{frame}
+\section{Amelioration}
+
+\begin{frame}{Accelerating generation}
+    \begin{figure}
+        \includegraphics[width=\textwidth]{imgs/papier_accelerer.png}
+    \end{figure}
+    Imagine that you have $T = 10,000$. You \alert{can not do 10,000 steps to generate one image}. But, using the \alert{reparametrization trick}:
+
+    \begin{align*}
+        x_{T} &= x_0 + \sigma_{T,0} \epsilon_{T} \Rightarrow \alert{\tilde{x_0}}\\
+        x_{T-k} &= \tilde{x_0} + \sigma_{T-k,0} \epsilon_{T-k}
+    \end{align*}
+
+    So we can \alert{generate with $T/k$ steps}.
+    
+\end{frame}
 
 \begin{frame}{OpenAI's incrementation}
     \begin{figure}
@@ -271,9 +310,6 @@ Hence, they \alert{interpolate between the two extreme values}, and let the \ale
     \uncover<5>{This loss is prone to \alert{gradient exploding} and we need \alert{importance sampling} to implement it.}
 \end{frame}
 
-\begin{frame}{Our results}
-    TODO
-\end{frame}
 
 \section{Classifier Guidance}
 
